@@ -948,7 +948,7 @@ if (window.ue && ue.tag) {ue.tag('ewc');ue.tag('ewc:prime');ue.tag('ewc:cartsize
 <script type="text/javascript">window.navmet.push({key:'NavBar',end:+new Date(),begin:window.navmet.main});</script>
 
 <script type="text/javascript">
-    <!--
+
     window.$Nav && $Nav.declare('config.fixedBarBeacon',false);
     window.$Nav && $Nav.when("data").run(function(data) { data({"freshTimeout":{"template":{"name":"flyoutError","data":{"error":{"title":"<style>#nav-flyout-fresh{width:269px;padding:0;}#nav-flyout-fresh .nav-flyout-content{padding:0;}</style><a href='/amazonfresh'><img src='https://images-na.ssl-images-amazon.com/images/G/01/omaha/images/yoda/flyout_72dpi._V270255989_.png' /></a>"}}}},"cartTimeout":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"カート","url":"/gp/cart/view.html?ref_=nav_err_cart_timeout"},"title":"エラーです。","paragraph":"カートロード中にエラーが発生しました"}}}},"primeTimeout":{"template":{"name":"flyoutError","data":{"error":{"title":"<a href='/gp/prime?ref_=nav_prime_btn_fb'><img src='https://images-fe.ssl-images-amazon.com/images/G/09/prime/yourprime/yourprime-client-fallback._V314779227_.png' /></a>"}}}},"ewcTimeout":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"カート","url":"/gp/cart/view.html?ref_=nav_err_ewc_timeout"},"title":"エラーです。","paragraph":"現在、カートの読み込みに問題が発生しています"}}}},"errorWishlist":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"ほしい物リスト","url":"/gp/registry/wishlist/?ref_=nav_err_wishlist"},"title":"エラーです。","paragraph":"現在、リストの取得に問題が発生しています"}}}},"emptyWishlist":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"ほしい物リスト","url":"/gp/registry/wishlist/?ref_=nav_err_empty_wishlist"},"title":"エラーです。","paragraph":"リストは空です"}}}},"yourAccountContent":{"template":{"name":"flyoutError","data":{"error":{"button":{"text":"アカウント","url":"/gp/css/homepage.html?ref_=nav_err_youraccount"},"title":"エラーです。","paragraph":"現在、リストの取得に問題が発生しています"}}}},"shopAllTimeout":{"template":{"name":"flyoutError","data":{"error":{"paragraph":"現在、リストの取得に問題が発生しています"}}}},"kindleTimeout":{"template":{"name":"flyoutError","data":{"error":{"paragraph":"現在、リストの取得に問題が発生しています"}}}}}); });
 window.$Nav && $Nav.when("util.templates").run("FlyoutErrorTemplate", function(templates) {
@@ -1297,7 +1297,8 @@ if (window.P && typeof window.P.declare === "function" && typeof window.P.now ==
 
 window.$Nav && $Nav.declare('configComplete');
 
-    -->
+  
+
 </script>
 
 
@@ -1565,19 +1566,16 @@ window.$Nav && $Nav.declare('configComplete');
   line-height: 19px;
   overflow: hidden;
   position: relative;
-  padding: 0;
-  vertical-align: baseline;
+  padding: 0;;
 }
 
 .bia-action-inner {
   border: 0;
   display: inline;
   font-size: 11px;
-  height: auto;
   line-height: 19px;
   padding: 0px 4px 0px 4px;
   text-align: center;
-  width: auto;
   white-space: nowrap;
 }
 
@@ -1612,9 +1610,6 @@ window.$Nav && $Nav.declare('configComplete');
 
 .b2b-see-more-link a {
   display: inline;
-  float: left;
-  margin-top: 3px;
-  margin-left: 3px;
 }
 
 .hcb-see-more-link a {
